@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Caveat:wght@400;700&family=Dancing+Script:wght@400;500;600&family=Dela+Gothic+One&family=Lilita+One&family=Oswald:wght@500;600&family=Paytone+One&family=Poppins:wght@300;400;500;600&display=swap&family=Quicksand&display=swap');
+
+:root {
+  --primary-color: #8166cb;
+  --primary-color-dark: #8ca756;
+  --secondary-color: #c0c2ba;
+  --text-dark: #282d31;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+
+  --max-width: 1200px;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: poppins;
+  scroll-behavior: smooth;
+}
+.section-content{
+    width: 100%;
+    padding: 30px 15% 30px;
+}
+.main-section{
+    width: 100%;
+    height: max-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+      rgba(45, 92, 132, 0.5),
+      rgba(45, 92, 132, 0.5)
+    ),
+    url("https://www.shutterstock.com/image-photo/businessman-using-tablet-on-abstract-260nw-318614150.jpg");
+}
+h3{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary-color-dark);
+    
+}
+.caption{
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Quicksand';
+}
+.wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+    z-index: 2;
+  }
+  
+  
+/* NAVBAR */
+nav{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    justify-content: space-between;
+    padding: 30px 15% 30px;
+   background-color: #8ca756;
+   
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.nav-list li a{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+.nav-list li a:hover{
+    background-color: rgb(85, 83, 14);
+    padding: 4px;
+    border-radius: 2rem;
+    text-decoration-color: #fff;
+    text-underline-offset: .3rem;
+}
+.nav-logo a{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+/* HEADER */
+header{
+    height: max-content;
+    display: flex;
+    align-items: center;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: flex-start;
+}
+.text-content h1{
+    font-size: 6rem;
+    color:goldenrod;
+    -webkit-text-stroke: 2px var(--extra-light);
+    margin-bottom: .4rem;
+}
+.text-content p{
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #fff;
+    width: 800px;
+    margin-bottom: 1rem;
+}
+.text-content button{
+    padding: .8rem 2.5rem;
+    background-color: var(--primary-color-dark);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all .20s ease-in-out;
+}
+.text-content button a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.text-content button:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+
+/* SERVICES */
+.event-card span{
+    color: var(--primary-color-dark);
+}
+.event-card{
+    width: 100%;
+    height: max-content;
+    background-color: var(--secondary-color);
+}
+.card-container{
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 3fr));
+    grid-gap: 4rem;
+}
+.card{
+    width: 350px;
+    border-radius: 7px;
+    background-color: rgb(250, 250, 250);
+}
+.card-image img{
+    width: 100%;
+    height: 10rem;
+    border-radius:  7px 7px 0 0 ;
+    object-fit: cover;
+}
+.card-text h2{
+    font-size: .9rem;
+    color: var(--text-light);
+    padding: 12px;
+}
+/*BANNER */
+.banner{
+    background-image: linear-gradient(
+        rgba(35, 71, 103, 0.5),
+        rgba(35, 71, 103, 0.5)
+      ),
+      url("https://okcredit-blog-images-prod.storage.googleapis.com/2021/07/eventplannerfee1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-content{
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.banner-content p{
+    width: 870px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.banner-content h2{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+.banner-content button{
+    padding: .7rem 2rem;
+    color: #fff;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+.banner-content button:hover{
+    background:var(--text-light);
+    transform: scale(1.075);
+}
+
+/*FOOTER*/
+.footer-content{
+    width: 100%;
+    background-color: #282d31;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.footer-content h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    > a{
+        color: #ffff;
+    }
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.footer-links li a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.footer-content .caption{
+    color: #ffff;
+}
+
+/********************************/
+.copy-content{
+    background-color: var(--text-dark);
+    text-align: center;
+    color: #fff;
+}
+/********************************************************************* MEDIA QUERY ****************************************************************************/
+@media(max-width: 600px){
+    .nav-logo a{
+        font-size: 1.2rem;
+    }
+    .nav-list a{
+        display: none;
+    }
+    .text-content{
+        width: 100%;
+        padding: 10px;
+    }
+    .text-content h1{
+        font-size: 4rem;
+    }
+    .text-content p{
+        width: 100%;
+    }
+    .banner-content p{
+        width: 100%;
+    }
+    .card-container{
+        padding: 0;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-image img{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .item{
+        flex-direction: column;
+    }
+    .grid{
+        flex-direction: column;
+    }
+    .box-right{
+        display: none;
+    }
+}
